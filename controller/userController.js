@@ -24,7 +24,7 @@ exports.create=async(req,res)=>{
 
 
 
-            },process.env.secretKey,{expiresIn:"1d"}
+            },process.env.secretKey,{expiresIn:"30 mins"}
         )
         New.token=token
         New.save()
