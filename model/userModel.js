@@ -16,6 +16,10 @@ const userSchema=new mongoose.Schema({
     token:{
         type:String,
        
+    },
+    isnewAdmin:{
+        type:Boolean,
+        default:false
     }
 },{timestamps:true})
 const user=mongoose.model("userprofile",userSchema)
